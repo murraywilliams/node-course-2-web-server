@@ -49,6 +49,17 @@ app.get('/about', (req, res) => {
   });
 });
 
+// Create new route "/projects"
+app.get('/projects', (req, res) => {
+  res.render('projects.hbs', {
+    pageTitle: 'Projects Page'
+  });
+});
+// Create view file
+// Add new link to partial header file to navigate to page
+// Commit to Gitand push to git hub
+// Push it up to heroku to view it live
+
 // /bad failed request - send back JSON with errorMessage property "Unable to fulfil this request"
 app.get('/bad', (req, res) => {
   res.send({
